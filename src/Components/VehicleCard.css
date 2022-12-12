@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+
+.vehicle-card {
+  font-family: 'Exo', sans-serif;
+  background-color: rgb(12, 11, 11);
+  color: white;
+  width: 27rem;
+  min-height: 750px;
+  margin: 1rem 0px;
+  padding: 1rem;
+  border: 15px solid rgb(73, 73, 73);
+  border-radius: 5px;
+}
+
+.vehicle-card  img {
+  max-width: 100%;
+}
+
+.credits-symbol {
+  max-width: 1.5rem;
+}
+

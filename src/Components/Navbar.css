@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+
+.nav-container {
+  font-family: 'Exo', sans-serif;  
+  color: white;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 6rem;
+  border: 1px solid white;
+  box-shadow: inset 0px 0px 16px 0px rgba(50,50,255,1);
+  z-index: 3;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.navbar-button {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 3rem;
+  width: 10rem;
+  margin-right: 2rem;
+  border: 1px solid white;
+}
+
+.navbar-button:hover {
+  box-shadow: 0px 0px 30px 0px rgba(50,50,255,1);
+  animation: none;
+}
+
+.nav-popup {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 130%;
+  background-color: black;
+  color: white;
+  height: 6rem;
+  width: 48rem;
+  z-index: 2;
+  box-shadow: inset 0px 0px 16px 0px rgba(50,50,255,1);
+  animation: shipyard-appear 500ms;
+}
+
+.button-animation {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  animation: button-appear 2s;
+}
+
+.shipyard-container {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  top: 130%;
+  background-color: black;
+  color: white;
+  width: 25rem;
+  height: 6rem;
+  z-index: 2;
+  
+  box-shadow: inset 0px 0px 16px 0px rgba(50,50,255,1);
+  animation: shipyard-appear 500ms;
+}
+
+.shipyard-button {
+  height: 3rem;
+  width: 10rem;
+  box-shadow: 0px 0px 16px 0px rgba(50,50,255,1);
+  animation: button-appear 2s;
+  transition: 100ms;
+}
+
+.shipyard-button:hover {
+  scale: 1.1;
+  transition: 100ms;
+  z-index: 2;
+}
+
+/* .navbar-button:hover > .shipyard-container {
+  scale: .90909;
+} */
+
+@keyframes shipyard-appear {
+  0% {
+    top: 0%; 
+    width: 10rem;
+    box-shadow: inset 0px 0px 16px 0px rgba(50,50,255,1);
+  };
+  100% {
+    top: 130%; 
+    width: auto;
+    box-shadow: inset 0px 0px 16px 0px rgba(50,50,255,1);
+  };
+}
+
+@keyframes button-appear {
+  0% {opacity: 0};
+  50% {opacity: 0};
+  99.9% {opacity: 0};
+  100% {opacity: 1};
+}
+
+@keyframes navpopup-appear {
+  0% {
+    top: 0%; 
+    width: 10rem;
+    box-shadow: inset 0px 0px 16px 0px rgba(50,50,255,1);
+  };
+  100% {
+    top: 130%; 
+    width: 20rem;
+    box-shadow: inset 0px 0px 16px 0px rgba(50,50,255,1);
+  };
+}

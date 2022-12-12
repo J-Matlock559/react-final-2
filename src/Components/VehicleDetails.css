@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+
+.details-background {
+  background-image: url(../vehicle-images/hangar-bay.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.details-card {
+  font-family: 'Exo', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(12, 11, 11);
+  color: white;
+  /* min-height: 50vh; */
+  width: 70vw;
+  padding: 1rem;
+  border: 15px solid rgb(65, 65, 65);
+  outline: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 10px 10px 15px 0px black;
+}
+
+.details-col-1 {
+  width: 40%;
+}
+
+.details-col-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 60%;
+  height: 100%;
+}
+
+.details-row-1 {
+  display: flex;
+  width: 100%;
+  min-height: 50vh;
+}
+
+.details-row-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.details-image {
+  height: 100%;
+  width: 40%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.details-details {
+  height: 100%;
+  width: 60%;
+  padding: 1rem;
+  margin-left: 15px;
+}
+
+.details-image img {
+  max-width: 100%;
+}
+
+.details-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  height: 3rem;
+  width: 100%;
+}
+
+.details-buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: 15px;
+  height: 3rem;
+  width: 50%;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.row-2-col-1 {
+  width: 39.5%;
+}
+
+.row-2-col-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 60.5%;
+}
+
+.quantity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 2rem;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.plus-minus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+}

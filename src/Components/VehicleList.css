@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+
+a {
+  font-family: 'Exo', sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+.vehicle-card {
+  font-family: 'Exo', sans-serif;
+  background-color: rgb(12, 11, 11);
+  color: white;
+  width: 27rem;
+  min-height: 750px;
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 15px solid rgb(65, 65, 65);
+  outline: 1px solid black;
+  border-radius: 5px;
+  transition: ease-in 100ms;
+  box-shadow: 10px 10px 15px 0px black;
+}
+
+.vehicle-card:hover {
+  scale: 1.04;
+  transition: ease-in 100ms;
+}
+.vehicle-card:hover .glow-border {
+  box-shadow: 0px 0px 25px 0px rgba(50,50,255,1);
+  text-shadow: 0px 0px 10px rgba(255,255,255,.5);
+  animation: none;
+}
+
+
+
+.vehicle-card  img {
+  max-width: 100%;
+}
+
+.credits-symbol {
+  max-width: 1.5rem;
+}
+
+.vehicle-list {
+  background-image: url(../vehicle-images/hangar.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  justify-content: space-evenly;
+}
+
+.button-row {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.datapad-image {
+  display: flex;
+  height: 400px;
+  border: 1px solid white;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.datapad-details {
+  border: 1px solid white;
+  margin-top: 15px;
+  padding: 1rem;
+  
+
+}
+
+.datapad-button {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  margin-top: 15px;
+  color: white;
+  border: 1px solid white;
+  background-color: rgba(0,0,0,0);
+  cursor: pointer;
+  /* animation: pulse 2s infinite; */
+
+}
+
+/* .datapad-button:hover {
+  background-color: rgba(200,200,255,1);
+  color: black;
+  transition: ease-in-out;
+} */
+
+.nav-button {
+  font-family: 'Exo', sans-serif;
+  width: 5rem;
+  margin: 1.5rem;
+  background-color: rgba(0,0,0,1);
+  cursor: pointer;
+  transition: linear 100ms;
+}
+
+.nav-button:hover {
+  box-shadow: 0px 0px 50px 0px rgba(50,50,255,1);
+  width: 6rem;
+  margin: 1.5rem 1rem;
+  animation: none;
+  transition: linear 100ms;
+}
+
+.active-button {
+  box-shadow: inset 0px 0px 50px 0px rgba(50,50,255,1);
+  animation: none;
+}
+

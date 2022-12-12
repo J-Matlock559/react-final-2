@@ -8,7 +8,7 @@ import "./Navbar.css"
 function Navbar() {
   const [showPopup, setShowPopup] = useState(false);
   const [showNav, setShowNav] = useState(false);
-  const [cart, setCart, blackMarket, setBlackMarket] = useContext(CartContext);
+  const [cart,, blackMarket,] = useContext(CartContext);
   let cartTotal = 0;
 
   cart.map((ship) => {

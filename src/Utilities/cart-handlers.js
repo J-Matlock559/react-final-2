@@ -29,22 +29,3 @@ export const deleteShip = (cart, ship) => {
 
   return newCart;
 };
-
-// const updateBlack = () => {
-//   const newCart = [...blackMarket];
-//   ship.qty = qty;
-//   let dupe = false;
-
-//   for (let i = 0; i < newCart.length; i++) {
-//     if (newCart[i].url === ship.url) {
-//       newCart[i].qty = newCart[i].qty + ship.qty;
-//       dupe = true;
-//     }
-//     console.log(ship);
-//   }
-
-//   if (newCart.length === 0 || dupe === false) {
-//     newCart.push(ship);
-//   }
-//   setBlackMarket(newCart);
-// };

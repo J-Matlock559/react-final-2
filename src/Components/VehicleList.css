@@ -83,15 +83,9 @@ a {
   border: 1px solid white;
   background-color: rgba(0,0,0,0);
   cursor: pointer;
-  /* animation: pulse 2s infinite; */
-
 }
 
-/* .datapad-button:hover {
-  background-color: rgba(200,200,255,1);
-  color: black;
-  transition: ease-in-out;
-} */
+
 
 .nav-button {
   font-family: 'Exo', sans-serif;

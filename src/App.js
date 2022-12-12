@@ -24,11 +24,6 @@ function App() {
   const [added, setAdded] = useState(false);
 
   useEffect(() => {
-    localStorage.setItem("Black Market", JSON.stringify([]));
-    localStorage.setItem("Cart", JSON.stringify([]));
-  }, []);
-
-  useEffect(() => {
     localStorage.setItem("Black Market", JSON.stringify(blackMarket));
     localStorage.setItem("Cart", JSON.stringify(cart));
   }, [cart, blackMarket]);
@@ -40,7 +35,6 @@ function App() {
         "Ship",
         JSON.stringify({ ...singleVehicle, qty: 1 })
       );
-      setVehicleSelection(JSON.parse(localStorage.getItem("Ship")));
     })();
   }, [clickedVehicle]);
 

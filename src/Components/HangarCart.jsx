@@ -20,12 +20,9 @@ function HangarCart() {
           grandTotal = grandTotal + total;
           return(
             <div className="cart-item" key={ship.created}>
-              <div className="glow-border cart-detail"><b>Ship:</b>&nbsp;{ship.name}</div>
-
-              <div className="glow-border cart-detail"><b>Model:</b>&nbsp;{ship.model}</div>
-
+              <div className="glow-border cart-detail"><b>Ship:</b>&nbsp;&nbsp;<div>{ship.name}</div></div>
+              <div className="glow-border cart-detail"><b>Model:</b>&nbsp;&nbsp;<div>{ship.model}</div></div>
               <div className="glow-border cart-detail"><b>Quantity:</b>&nbsp;{ship.qty}</div>
-
               <div className="glow-border cart-detail cart-price"><b>Total: </b><img className="credits-symbol" style={{scale: '.75'}}
                 src={require(`../vehicle-images/credits.png`)}
               />{total.toLocaleString(undefined, { minimumFractionDigits: 2 })}</div>

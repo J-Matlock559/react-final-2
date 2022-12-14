@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+
+.dock-container {
+  /* background-image: url(../vehicle-images/hangar-cart.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; */
+  min-height: 100vh;
+  padding: 5rem;
+  font-family: 'Exo', sans-serif;
+  color: white;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+}
+
+.dock-card {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 40vw;
+  min-height: 70vh;
+  padding: 15px;
+  border: 15px solid rgb(65, 65, 65);
+  outline: 1px solid black;
+  border-radius: 5px;
+  margin-top: 2rem;
+  box-shadow: 10px 10px 15px 0px black;
+}
+
+form {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+input {
+  width: 100%;
+  margin-bottom: .75rem;
+  margin-top: .25rem;
+  background-color: rgb(13, 27, 71);
+  border: 1px solid white;
+  color: white;
+  height: 1.5rem;
+}

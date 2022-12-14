@@ -3,12 +3,15 @@ import { CartContext } from '../App';
 import { updateCart } from '../Utilities/cart-handlers';
 import "./VehicleDetails.css"
 
-function VehicleDetails() {
+function VehicleDetails({isLoading}) {
 
-  const ship = JSON.parse(localStorage.getItem('Ship'));
+  
   
   const [qty, setQty] = useState(1);
   const [cart, setCart, blackMarket, setBlackMarket] = useContext(CartContext);
+  
+  if (isLoading === true) {return null};
+  const ship = JSON.parse(localStorage.getItem('Ship'));
   
   
   const shipName = ship.name.replace(/\//g, "");

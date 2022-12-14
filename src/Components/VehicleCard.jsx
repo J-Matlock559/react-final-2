@@ -16,9 +16,7 @@ function VehicleCard({ name, price, model, maker, url, setClickedVehicle }) {
 
   const handleVehicleClick = () => {
     setClickedVehicle(url);
-    setTimeout(() => {
-      navigate("/ship-details");
-    }, 75); 
+    navigate("/ship-details");
   }
 
   return (
@@ -36,7 +34,7 @@ function VehicleCard({ name, price, model, maker, url, setClickedVehicle }) {
         src={require(`../vehicle-images/credits.png`)}
         />{price.toLocaleString(undefined, { minimumFractionDigits: 2 })}</h3>
         </div>
-        <div className="datapad-button glow-border" onClick={handleVehicleClick}>View In Hangar</div>
+        <div className="datapad-button glow-border" onClick={handleVehicleClick}><b>View In Hangar</b></div>
     </div>
   );
 }

@@ -17,11 +17,11 @@ function App() {
   const cartStore = localStorage.getItem("Cart");
   const blackStore = localStorage.getItem("Black Market");
   const [clickedVehicle, setClickedVehicle] = useState("");
-  const [vehicleSelection, setVehicleSelection] = useState({});
   const [page, setPage] = useState(1);
   const [cart, setCart] = useState(JSON.parse(cartStore) || []);
   const [blackMarket, setBlackMarket] = useState(JSON.parse(blackStore) || []);
   const [added, setAdded] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     localStorage.setItem("Black Market", JSON.stringify(blackMarket));
@@ -30,11 +30,13 @@ function App() {
 
   useEffect(() => {
     (async () => {
+      setIsLoading(true);
       const singleVehicle = await getVehicle(clickedVehicle);
       localStorage.setItem(
         "Ship",
         JSON.stringify({ ...singleVehicle, qty: 1 })
       );
+      setIsLoading(false);
     })();
   }, [clickedVehicle]);
 
@@ -48,7 +50,10 @@ function App() {
             <Navbar />
             <Routes>
               <Route path="/" element={<HomePage />} />
-              <Route path="ship-details" element={<VehicleDetails />} />
+              <Route
+                path="ship-details"
+                element={<VehicleDetails isLoading={isLoading} />}
+              />
               <Route
                 path="/vehicles"
                 element={

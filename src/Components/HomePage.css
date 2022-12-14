@@ -1,41 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+
 .home-container {
+  background-image: url(../vehicle-images/dok-background-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Exo', sans-serif;
+  /* background-attachment: fixed; */
+}
+
+.dok-ondar {
   background-image: url(../vehicle-images/dok-ondar.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  /* background-attachment: fixed; */
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
 }
 
 .home-button {
+  color: white;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid white;
   background-color: black;
   width: 10rem;
-  height: 3rem;
+  height: 10rem;
   margin: 150px;
-  margin-top: 300px;
+  margin-top: 200px;
   padding: 1rem;
+  z-index: 10;
 }
 
 .home-button::before {
   content: "";
+  pointer-events: none;
   position: absolute;
   background-color: rgba(50,50,255,.7);
   width: 100%;
   height: 100%;
-  top: 130%;
+  top: 90%;
   left: 0;
-
-  transform: perspective(1em) rotateX(15deg) scale(1, .5);
-  filter: blur(1.3em);
+  transform: perspective(3em) rotateX(15deg) scale(1, .5);
+  filter: blur(2em);
   animation: glow 2s linear infinite;
 }
 
+.black {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  position: absolute;
+  height: 10rem;
+  width: 10rem;
+  transition: 500ms;
+  z-index: 5;
+}
+
+.img {
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  background-color: black;
+  height: 9rem;
+  width: 9rem;
+  transition: 500ms;
+}
+
+.img1 {
+  background-image: url(../vehicle-images/TIEIN\ interceptor.jpg);
+  z-index: -1;
+}
+
+.img2 {
+  background-image: url(../vehicle-images/Flitknot\ speeder.jpg);
+  z-index: 0;
+}
+
+
+.img3 {
+  background-image: url(../vehicle-images/Droid\ tri-fighter.jpg);
+  z-index: 1;
+}
+
+.img4 {
+  background-image: url(../vehicle-images/Executor.jpg);
+  z-index: -1;
+}
+
+.img5 {
+  background-image: url(../vehicle-images/Calamari\ Cruiser.jpg);
+  z-index: 0;
+}
+
+.img6 {
+  background-image: url(../vehicle-images/Star\ Destroyer.jpg);
+  z-index: 1;
+}
+
+
+.home-button:hover .hover-1 {
+  transform: translate(-100%, -100%) rotate(-20deg) scale(1.5);
+  transition: 500ms;
+}
+
+.home-button:hover .hover-2 {
+  transform: translate(0%, -115%) scale(1.5);
+  transition: 500ms;
+}
+
+.home-button:hover .hover-3 {
+  transform: translate(100%, -100%) rotate(20deg) scale(1.5);
+  transition: 500ms;
+}
+
 @keyframes glow {
-  0% {background-color: rgba(50,50,255,.7);}
-  50% {background-color: rgba(50,50,255,1);}
-  100% {background-color: rgba(50,50,255,.7);}
+  0% {background-color: rgba(50,50,255,.5);}
+  50% {background-color: rgba(50,50,255,.7);}
+  100% {background-color: rgba(50,50,255,.5);}
 }

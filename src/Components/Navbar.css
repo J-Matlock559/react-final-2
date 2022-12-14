@@ -20,6 +20,7 @@
   display: flex;
   justify-content: right;
   align-items: center;
+  width: 60%;
 }
 
 .navbar-button {
@@ -30,7 +31,7 @@
   align-items: center;
   color: white;
   height: 3rem;
-  width: 10rem;
+  min-width: 15%;
   margin-right: 2rem;
   border: 1px solid white;
 }
@@ -91,10 +92,6 @@
   transition: 100ms;
   z-index: 2;
 }
-
-/* .navbar-button:hover > .shipyard-container {
-  scale: .90909;
-} */
 
 @keyframes shipyard-appear {
   0% {

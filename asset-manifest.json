@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/react-final-2/static/css/main.58a1007c.css",
-    "main.js": "/react-final-2/static/js/main.aa26c8c9.js",
+    "main.css": "/react-final-2/static/css/main.0080c8ee.css",
+    "main.js": "/react-final-2/static/js/main.9d470931.js",
     "static/js/787.b1e31dbb.chunk.js": "/react-final-2/static/js/787.b1e31dbb.chunk.js",
     "static/media/AT-ST.jpg": "/react-final-2/static/media/AT-ST.fae5869df2db5158dedd.jpg",
     "static/media/hangar-cart.jpg": "/react-final-2/static/media/hangar-cart.792ca4706f38df367329.jpg",
     "static/media/dok-ondar.png": "/react-final-2/static/media/dok-ondar.b3c7329790c98ca24584.png",
     "static/media/T-16 skyhopper.jpg": "/react-final-2/static/media/T-16 skyhopper.0431adc1a3fc5c9c368e.jpg",
+    "static/media/dok-background-2.jpg": "/react-final-2/static/media/dok-background-2.0f90e4e97323cd351b2a.jpg",
     "static/media/Multi-Troop Transport.jpg": "/react-final-2/static/media/Multi-Troop Transport.78809140a57bedd18373.jpg",
     "static/media/TIE bomber.jpg": "/react-final-2/static/media/TIE bomber.782cefe78b495ce94c75.jpg",
     "static/media/Armored Assault Tank.jpg": "/react-final-2/static/media/Armored Assault Tank.bc6240f8ce110f54dabb.jpg",
@@ -19,6 +20,7 @@
     "static/media/TIEIN interceptor.jpg": "/react-final-2/static/media/TIEIN interceptor.761a0f2d441cb17f7908.jpg",
     "static/media/X-wing.jpg": "/react-final-2/static/media/X-wing.877d873c9cafe75f0a07.jpg",
     "static/media/Naboo Royal Starship.jpg": "/react-final-2/static/media/Naboo Royal Starship.2b8935030812990da02c.jpg",
+    "static/media/dok-background.jpg": "/react-final-2/static/media/dok-background.abc63732e687649dd878.jpg",
     "static/media/Clone turbo tank.jpg": "/react-final-2/static/media/Clone turbo tank.3bb43f566e9e709ff0df.jpg",
     "static/media/Imperial Speeder Bike.jpg": "/react-final-2/static/media/Imperial Speeder Bike.da58a92839774e72e587.jpg",
     "static/media/AT-TE.jpg": "/react-final-2/static/media/AT-TE.d75e0885958871cff29b.jpg",
@@ -84,13 +86,14 @@
     "static/media/Belbullab-22 starfighter.jpg": "/react-final-2/static/media/Belbullab-22 starfighter.f91c1645eeed4e185b75.jpg",
     "static/media/credits.png": "/react-final-2/static/media/credits.d6aa480103ee6d8d9e05.png",
     "static/media/Emergency Firespeeder.jpg": "/react-final-2/static/media/Emergency Firespeeder.3ac63a2a2bb46fb222a6.jpg",
+    "static/media/black.jpg": "/react-final-2/static/media/black.0a0e38337589edb918ea.jpg",
     "index.html": "/react-final-2/index.html",
-    "main.58a1007c.css.map": "/react-final-2/static/css/main.58a1007c.css.map",
-    "main.aa26c8c9.js.map": "/react-final-2/static/js/main.aa26c8c9.js.map",
+    "main.0080c8ee.css.map": "/react-final-2/static/css/main.0080c8ee.css.map",
+    "main.9d470931.js.map": "/react-final-2/static/js/main.9d470931.js.map",
     "787.b1e31dbb.chunk.js.map": "/react-final-2/static/js/787.b1e31dbb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.58a1007c.css",
-    "static/js/main.aa26c8c9.js"
+    "static/css/main.0080c8ee.css",
+    "static/js/main.9d470931.js"
   ]
 }

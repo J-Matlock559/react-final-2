@@ -19,6 +19,7 @@ function DockPayment({address, handleChange, handleCardSubmit}) {
           <label>First Name:
               <input 
                 className="glow-border"
+                placeholder='First Name'
                 type="text"
                 name='cardFirstName'
                 value={address.cardFirstName || ''}
@@ -29,6 +30,7 @@ function DockPayment({address, handleChange, handleCardSubmit}) {
             <label>Last Name:
               <input 
                 className="glow-border"
+                placeholder='Last Name'
                 type="text"
                 name='cardLastName'
                 value={address.cardLastName || ''}

@@ -8,6 +8,7 @@ function DockAddress({address, handleChange, handleSubmit}) {
 
           <label>First Name:
             <input className="glow-border"
+              placeholder='First Name'
               type="text"
               name='firstName'
               value={address.firstName || ''}
@@ -17,6 +18,7 @@ function DockAddress({address, handleChange, handleSubmit}) {
 
           <label>Last Name:
             <input className="glow-border"
+              placeholder='Last Name'
               type="text"
               name='lastName'
               value={address.lastName || ''}
@@ -26,6 +28,7 @@ function DockAddress({address, handleChange, handleSubmit}) {
 
           <label>Email:
             <input className="glow-border"
+              placeholder='Email'
               type="email"
               name='email'
               value={address.email || ''}
@@ -35,6 +38,7 @@ function DockAddress({address, handleChange, handleSubmit}) {
 
           <label>Phone:
             <input className="glow-border"
+              placeholder='Phone'
               type="phone"
               name='phone'
               value={address.phone || ''}
@@ -44,6 +48,7 @@ function DockAddress({address, handleChange, handleSubmit}) {
 
           <label>Street:
             <input className="glow-border"
+              placeholder='Street Address'
               type="text"
               name='street'
               value={address.street || ''}
@@ -53,6 +58,7 @@ function DockAddress({address, handleChange, handleSubmit}) {
 
           <label>City:
             <input className="glow-border"
+              placeholder='City'
               type="text"
               name='city'
               value={address.city || ''}
@@ -62,6 +68,7 @@ function DockAddress({address, handleChange, handleSubmit}) {
 
           <label>State:
             <input className="glow-border"
+              placeholder='State'
               type="text"
               name='state'
               value={address.state || ''}
@@ -71,6 +78,7 @@ function DockAddress({address, handleChange, handleSubmit}) {
 
           <label>Country:
             <input className="glow-border"
+              placeholder='Country'
               type="text"
               name='country'
               value={address.country || ''}
@@ -80,6 +88,7 @@ function DockAddress({address, handleChange, handleSubmit}) {
 
           <label>Planet:
             <input className="glow-border"
+              placeholder='Planet'
               type="text"
               name='planet'
               value={address.planet || ''}
@@ -89,6 +98,7 @@ function DockAddress({address, handleChange, handleSubmit}) {
 
           <label>Sector:
             <input className="glow-border"
+              placeholder='Sector'
               type="text"
               name='sector'
               value={address.sector || ''}
@@ -98,6 +108,7 @@ function DockAddress({address, handleChange, handleSubmit}) {
 
           <label>Region:
             <input className="glow-border"
+              placeholder='Region'
               type="text"
               name='region'
               value={address.region || ''}

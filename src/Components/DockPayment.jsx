@@ -65,7 +65,7 @@ function DockPayment({address, handleChange, handleCardSubmit}) {
 
             <input 
             type="submit" 
-            className="glow-border submit-button" 
+            className="glow-border submit-button clickable" 
             value='Proceed to Fleet Review'
           />
         </form>

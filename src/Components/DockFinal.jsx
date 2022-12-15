@@ -54,7 +54,7 @@ function DockFinal({address}) {
             </div>);
         })}
 
-        <div className="final-price">
+        <div className="final-price" style={{marginTop: '2rem'}}>
           <p>Subtotal:</p>
           <p><img className="credits-symbol checkout-symbol"
                 src={require(`../vehicle-images/credits.png`)}

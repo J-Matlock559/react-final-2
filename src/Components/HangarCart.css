@@ -64,6 +64,17 @@
 }
 
 .scale:hover {
+  transform-origin: left right;
   scale: 1.05;
   transition: 100ms;
+}
+
+.a-left {
+  display: flex;
+  justify-content: left;
+}
+
+.a-right {
+  display: flex;
+  justify-content: right;
 }

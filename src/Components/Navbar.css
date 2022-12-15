@@ -13,7 +13,7 @@
   height: 6rem;
   border: 1px solid white;
   box-shadow: inset 0px 0px 16px 0px rgba(50,50,255,1);
-  z-index: 3;
+  z-index: 20;
 }
 
 .nav-links {

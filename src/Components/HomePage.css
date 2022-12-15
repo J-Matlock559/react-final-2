@@ -9,15 +9,7 @@
   /* background-attachment: fixed; */
 }
 
-.dok-ondar {
-  background-image: url(../vehicle-images/dok-ondar.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-}
+
 
 .home-button {
   color: white;

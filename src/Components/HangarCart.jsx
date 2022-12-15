@@ -14,23 +14,23 @@ function HangarCart() {
         
         <div className="cart-card">
           <div className='cart-item glow-border'><h1>Current Fleet</h1></div>
-        {cart.map((ship) => {
-          const price = parseInt(ship.cost_in_credits);
-          const total = price * ship.qty;
-          grandTotal = grandTotal + total;
-          return(
-            <div className="cart-item" key={ship.created}>
-              <div className="glow-border cart-detail"><b>Ship:</b>&nbsp;&nbsp;<div>{ship.name}</div></div>
-              <div className="glow-border cart-detail"><b>Model:</b>&nbsp;&nbsp;<div>{ship.model}</div></div>
-              <div className="glow-border cart-detail"><b>Quantity:</b>&nbsp;{ship.qty}</div>
-              <div className="glow-border cart-detail cart-price"><b>Total: </b><img className="credits-symbol" style={{scale: '.75'}}
-                src={require(`../vehicle-images/credits.png`)}
-              />{total.toLocaleString(undefined, { minimumFractionDigits: 2 })}</div>
+          {cart.map((ship) => {
+            const price = parseInt(ship.cost_in_credits);
+            const total = price * ship.qty;
+            grandTotal += total;
+            return(
+              <div className="cart-item glow-border" key={ship.created}>
+                <div className="cart-detail a-left"><b>Ship:</b>&nbsp;&nbsp;<div>{ship.name}</div></div>
+                <div className="cart-detail a-left"><b>Model:</b>&nbsp;&nbsp;<div>{ship.model}</div></div>
+                <div className="cart-detail"><b>Quantity:</b>&nbsp;{ship.qty}</div>
+                <div className="cart-detail cart-price a-right"><b>Total: </b><img className="credits-symbol" style={{scale: '.75'}}
+                  src={require(`../vehicle-images/credits.png`)}
+                />{total.toLocaleString(undefined, { minimumFractionDigits: 2 })}</div>
 
-              <div className="glow-border cart-detail clickable scale" onClick={() => {setCart(deleteShip(cart, ship))}}>Remove From Fleet</div>
-            </div>
-          )
-        })}
+                <div className="glow-border cart-detail clickable" onClick={() => {setCart(deleteShip(cart, ship))}}>Remove From Fleet</div>
+              </div>
+            )
+          })}
 
         { cart.length === 0 ? 
           <div className='grand-total glow-border' style={{margin: '15px', width: 'auto'}}>There are no ships in this fleet.</div> 
@@ -51,12 +51,12 @@ function HangarCart() {
         <div className='cart-item glow-border'><h1>Black Market Fleet</h1></div>
         {blackMarket.map((ship) => {
           return(
-            <div className="cart-item" key={ship.created}>
-              <div className="glow-border cart-detail"><b>Ship:</b>&nbsp;&nbsp;<div>{ship.name}</div></div>
-              <div className="glow-border cart-detail"><b>Model:</b>&nbsp;&nbsp;<div>{ship.model}</div></div>
-              <div className="glow-border cart-detail"><b>Quantity:</b>&nbsp;{ship.qty}</div>
-              <div className="glow-border cart-detail">See Dok-Ondar</div>
-              <div className="glow-border cart-detail clickable scale" onClick={() => {setBlackMarket(deleteShip(blackMarket, ship))}}>Remove From Fleet</div>
+            <div className="cart-item glow-border" key={ship.created}>
+              <div className="cart-detail a-left"><b>Ship:</b>&nbsp;&nbsp;<div>{ship.name}</div></div>
+              <div className="cart-detail a-left"><b>Model:</b>&nbsp;&nbsp;<div>{ship.model}</div></div>
+              <div className="cart-detail"><b>Quantity:</b>&nbsp;{ship.qty}</div>
+              <div className="cart-detail">See Dok-Ondar</div>
+              <div className="glow-border cart-detail clickable" onClick={() => {setBlackMarket(deleteShip(blackMarket, ship))}}>Remove From Fleet</div>
             </div>
           )
         })}

@@ -11,8 +11,6 @@ function VehicleList({type, setClickedVehicle}) {
   
   const [page, setPage] = useContext(PageContext);
 
-  
-
   useEffect(() => {
     (async () => {
       const allVehicles = await getAllVehicles(page, type);

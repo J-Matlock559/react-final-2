@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
 
 .dock-container {
-  /* background-image: url(../vehicle-images/hangar-cart.jpg);
+  background-image: url(../vehicle-images/hangar-bay.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; */
+  background-attachment: fixed;
   min-height: 100vh;
   padding: 5rem;
   font-family: 'Exo', sans-serif;
@@ -19,7 +19,7 @@
   display: flex;
   flex-direction: column;
   background-color: black;
-  width: 40vw;
+  width: 45vw;
   min-height: 70vh;
   padding: 15px;
   border: 15px solid rgb(65, 65, 65);
@@ -27,6 +27,8 @@
   border-radius: 5px;
   margin-top: 2rem;
   box-shadow: 10px 10px 15px 0px black;
+  z-index: 5;
+  /* left: 100%; */
 }
 
 form {
@@ -41,5 +43,68 @@ input {
   background-color: rgb(13, 27, 71);
   border: 1px solid white;
   color: white;
-  height: 1.5rem;
+  /* height: 1.5rem; */
+  padding: 7px;
+  font-size: large;
 }
+
+.payment-address {
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.final-details {
+  width: 50%;
+  padding: 15px;
+}
+
+.final-ship {
+  display: flex;
+  justify-content: space-between;
+}
+
+.final-ship > p {
+  width: 30%;
+}
+
+.final-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-symbol {
+  scale: .7;
+  position: relative;
+  top: 4px;
+  right: -2px;
+}
+
+.submit-button {
+  margin-top: 1rem;
+  height: 3rem;
+  font-size: larger;
+}
+
+.purchase-button {
+  font-size: x-large;
+  font-weight: 900;
+  text-align: center;
+  padding: 1rem;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* .card-animation {
+  position: absolute;
+  transform: translateX(-170%);
+  transition: 1s;
+
+}
+
+@keyframes card-appear {
+  0% {left: -300%};
+  50% {left: -10%};
+  100% {left: 0%};
+} */

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-final-2/static/css/main.599fa35c.css",
-    "main.js": "/react-final-2/static/js/main.b78451c7.js",
+    "main.css": "/react-final-2/static/css/main.f4c8299a.css",
+    "main.js": "/react-final-2/static/js/main.75f1c46d.js",
     "static/js/787.b1e31dbb.chunk.js": "/react-final-2/static/js/787.b1e31dbb.chunk.js",
     "static/media/AT-ST.jpg": "/react-final-2/static/media/AT-ST.fae5869df2db5158dedd.jpg",
     "static/media/hangar-cart.jpg": "/react-final-2/static/media/hangar-cart.792ca4706f38df367329.jpg",
@@ -87,12 +87,12 @@
     "static/media/Emergency Firespeeder.jpg": "/react-final-2/static/media/Emergency Firespeeder.3ac63a2a2bb46fb222a6.jpg",
     "static/media/black.jpg": "/react-final-2/static/media/black.0a0e38337589edb918ea.jpg",
     "index.html": "/react-final-2/index.html",
-    "main.599fa35c.css.map": "/react-final-2/static/css/main.599fa35c.css.map",
-    "main.b78451c7.js.map": "/react-final-2/static/js/main.b78451c7.js.map",
+    "main.f4c8299a.css.map": "/react-final-2/static/css/main.f4c8299a.css.map",
+    "main.75f1c46d.js.map": "/react-final-2/static/js/main.75f1c46d.js.map",
     "787.b1e31dbb.chunk.js.map": "/react-final-2/static/js/787.b1e31dbb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.599fa35c.css",
-    "static/js/main.b78451c7.js"
+    "static/css/main.f4c8299a.css",
+    "static/js/main.75f1c46d.js"
   ]
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import { usePaymentInputs } from 'react-payment-inputs';
 
 function DockPayment({address, handleChange, handleCardSubmit}) {
-  const { meta, getCardNumberProps, getExpiryDateProps, getCVCProps } = usePaymentInputs();
+  const { getCardNumberProps, getExpiryDateProps, getCVCProps } = usePaymentInputs();
   return (
     <div className='dock-card'>
       <div className="payment-address glow-border">

@@ -45,7 +45,7 @@ function DockFinal({address}) {
           subTotal += ship.cost_in_credits * ship.qty;
           shipTotal = ship.cost_in_credits * ship.qty;
           return(
-            <div key={ship.created} className='final-ship'>
+            <div key={ship.created} className='final-ship glow-border'>
               <p>{ship.name}</p>
               <p style={{textAlign: 'center'}}>Quantity: {ship.qty}</p>
               <p style={{textAlign: 'right'}}>Total: <img className="credits-symbol checkout-symbol"

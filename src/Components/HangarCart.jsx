@@ -8,6 +8,8 @@ function HangarCart() {
   const [cart, setCart, blackMarket, setBlackMarket] = useContext(CartContext);
   const navigate = useNavigate();
   let grandTotal = 0;
+
+  console.log(JSON.parse(localStorage.getItem('Address')));
   
   return (
     <div className='cart-container'>

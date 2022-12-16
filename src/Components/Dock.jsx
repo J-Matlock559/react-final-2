@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import DockAddress from './DockAddress';
 import DockPayment from './DockPayment';
 import DockFinal from './DockFinal';

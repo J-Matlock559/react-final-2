@@ -14,12 +14,14 @@ export const CartContext = createContext();
 export const PageContext = createContext();
 
 function App() {
-  const cartStore = localStorage.getItem("Cart");
-  const blackStore = localStorage.getItem("Black Market");
   const [clickedVehicle, setClickedVehicle] = useState("");
   const [page, setPage] = useState(1);
-  const [cart, setCart] = useState(JSON.parse(cartStore) || []);
-  const [blackMarket, setBlackMarket] = useState(JSON.parse(blackStore) || []);
+  const [cart, setCart] = useState(
+    JSON.parse(localStorage.getItem("Cart")) || []
+  );
+  const [blackMarket, setBlackMarket] = useState(
+    JSON.parse(localStorage.getItem("Black Market")) || []
+  );
   const [added, setAdded] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
